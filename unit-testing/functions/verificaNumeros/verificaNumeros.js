@@ -1,11 +1,11 @@
 const verificaNumeros = (arr) => {
-    arr.forEach(element => {
-       if (typeof element !== 'number') {
-        return false;
-       };
-    });
+   for(i = 0; i < arr.length; i++) {
+        if (typeof arr[i] !== 'number') {
+            return false;
+        };
+   };
 
-    return true;
+   return true;
 };
 
 module.exports = verificaNumeros;
